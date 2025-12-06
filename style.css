@@ -1,0 +1,170 @@
+:root {
+  --blue: #0b4f9f;
+  --light-blue: #2e7bdc;
+  --yellow: #ffd43b;
+  --bg: #eaf4ff;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #ffffff);
+  color: #07345a;
+}
+
+header {
+  background: linear-gradient(90deg, var(--blue), var(--light-blue));
+  color: var(--card);
+  padding: 28px 20px;
+}
+
+.container {
+  max-width: 980px;
+  margin: 24px auto;
+  padding: 0 18px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 0.6px;
+}
+
+.subtitle {
+  opacity: 0.95;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+nav {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.navlink {
+  background: var(--yellow);
+  color: #07345a;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(7, 52, 90, 0.06);
+}
+
+
+.two-col {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+
+.col {
+  flex: 1 1 300px; 
+  min-width: 260px;
+}
+
+
+.robot-design-box {
+  background: linear-gradient(180deg, #0b4f9f, #2e7bdc);
+  color: #3c3c3c;
+  padding: 24px;
+  border-radius: 16px;
+  margin: 20px 0;
+}
+
+
+.robot-design-box h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: var(--yellow);
+}
+
+.robot-design-box p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+
+.image-wrap {
+  margin: 14px 0;
+  text-align: center;
+}
+
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(7,52,90,0.08);
+}
+
+.yellowTextH2 {
+  color: var(--yellow);
+}
+
+.ParagraphForYellowTextH2 {
+  color: white;
+}
+
+#solution .col {
+  border: 3px solid var(--blue);
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.bottom-image {
+  text-align:center;
+  margin-top: 18px;
+}
+
+
+.grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+
+@media (max-width: 520px) {
+  header { padding: 18px 12px; }
+  h1 { font-size: 20px; }
+  .robot-design-box { padding: 18px; }
+}
+
+#robot-design-box .responsive-img {
+  max-width: 400px; 
+}
+
+.cardForMotors {
+  color:white;
+  background: rgb(34, 34, 60);
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(7, 52, 90, 0.06);
+}
+
